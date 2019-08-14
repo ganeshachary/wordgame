@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aar.app.NewAddition.LanguageSelectionActivity">
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/main_button_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                style="@style/headingtext"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Welcome \n\n Choose a language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:onClick="englishClicked"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/main_button_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_English"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    style="@style/buttontext"
+                    android:layout_centerInParent="true"
+
+                    android:text="English"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="teluguClicked"
+                android:background="@drawable/main_button_background"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_telugu"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    style="@style/buttontext"
+                   android:layout_centerInParent="true"
+                    android:text="Telugu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="settingClicked"
+                android:background="@drawable/main_button_background"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_setting"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    style="@style/buttontext"
+                    android:layout_centerInParent="true"
+                    android:text="Setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
